@@ -16,8 +16,8 @@ main{
     margin-block: 30px;
 }
 .logo{
-    font-weight: bolder;
-    font-size: 1.5em;
+    font-weight: 1000;
+    font-size: 1.8rem;
 
 }
 nav{
@@ -39,6 +39,9 @@ ul li a {
 ul li a:hover{
     color: var(--gold);
 }
+section{
+    max-width: 500px;
+}
 .menus{
     display:flex;
     column-gap: 32px;
@@ -56,6 +59,7 @@ ul li a:hover{
 }
 .action{
     padding: 7px;
+    padding-inline: 9px;
     font-size: 18px;
     border-radius: 20px;
     border:1px solid var(--gold);
