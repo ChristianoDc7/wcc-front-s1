@@ -1,3 +1,7 @@
+:root{
+    --gold: #D9985F;
+}
+
 body{
     color: black;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -33,7 +37,7 @@ ul li a {
     transition: all .3s ease
 }
 ul li a:hover{
-    color: gold;
+    color: var(--gold);
 }
 .menus{
     display:flex;
@@ -42,4 +46,25 @@ ul li a:hover{
 .euroText {
     font-size: 3rem;
     font-weight: bolder;
+}
+.paragraph{
+    color: dimgray;
+}
+.action-section{
+    column-gap: 20px;
+    display: flex   ;
+}
+.action{
+    padding: 7px;
+    font-size: 18px;
+    border-radius: 20px;
+    border:1px solid var(--gold);
+    background-color: #fff;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.action:hover{
+    background-color: var(--gold);
+    color: #fff;
 }
