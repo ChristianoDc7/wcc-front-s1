@@ -1,42 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./script/app.js" defer></script>
     <title>WCC-Front-S1</title>
 </head>
 <body>
-    <main>
-        <nav>
-            <div class="logo">
-                Sinaux
-            </div>
-            <div >
-                <ul class="menus">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Sign up</a></li>
-                </ul>
-            </div>
-        </nav>
-        <section >
+<main class="column">
+    <nav>
+        <div class="logo">
+            Sinaux
+        </div>
+        <div >
+            <ul class="menus">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="centerALign">Courses <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#" class="centerALign">Sign up <i class="fa-solid fa-arrow-right"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
 
-        <h1 class="euroText">Grow your skills and find your perfect tutor.</h1>
+        <h1 class="euroText ">Grow your skill
+            <img src="./assets/girl-1.avif" class="avatar"/>
+            <div class="line-start">
+                and find your perfect tutor.
+                <svg x="0px" y="0px" viewBox="0 0 122.88 122.88" class="sparkle" style="enable-background:new 0 0 122.88 122.88" >
+                    <path class="st0" d="M62.43,122.88h-1.98c0-16.15-6.04-30.27-18.11-42.34C30.27,68.47,16.16,62.43,0,62.43v-1.98 c16.16,0,30.27-6.04,42.34-18.14C54.41,30.21,60.45,16.1,60.45,0h1.98c0,16.15,6.04,30.27,18.11,42.34 c12.07,12.07,26.18,18.11,42.34,18.11v1.98c-16.15,0-30.27,6.04-42.34,18.11C68.47,92.61,62.43,106.72,62.43,122.88L62.43,122.88z"/>
+                </svg>
+            </div>
+
+        </h1>
         <p class="paragraph">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Sed ut perspiciatis unde omnibus iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
         </p>
-        </section>
         <div class="action-section">
-            <button class="action">
+            <button class="action btn1">
                 Get Started
             </button>
-            <button class="action">
+            <button class="action btn2 centerALign" >
                 Browse Courses
+                <i class="fa-solid fa-arrow-right"></i>
             </button>
         </div>
-    </main>
+        <div class="centerALign rating">
+            <div class="star  centerALign centerJustify">
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="p-rates">
+                Over fice thousand students have given a 5 star review to their tutor
+            </p>
+        </div>
+    </section>
+</main>
 </body>
-</html>

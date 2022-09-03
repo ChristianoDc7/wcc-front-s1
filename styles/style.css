@@ -1,24 +1,29 @@
 :root{
     --gold: #D9985F;
+    --dark: #231F1E;
 }
 
 body{
     color: black;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 main{
-    margin-inline: 50px;
+    margin-inline: 90px;
     margin-block: 30px;
+    row-gap:70px;
 }
 .logo{
     font-weight: 1000;
     font-size: 1.8rem;
-
 }
 nav{
     display: flex;
@@ -39,8 +44,20 @@ ul li a {
 ul li a:hover{
     color: var(--gold);
 }
+.fa-solid{
+    font-size: x-small;
+    font-weight: 700;
+}
+.fa-star{
+    font-size: medium;
+}
 section{
     max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 25px;
+    height: 100%;
 }
 .menus{
     display:flex;
@@ -49,6 +66,20 @@ section{
 .euroText {
     font-size: 3rem;
     font-weight: bolder;
+}
+.avatar{
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.line-start::before{
+    content: "";
+    width:70px;
+    height: 2px;
+    background-color: var(--gold);
+    transform: translateY(-600%);
+    display: inline-flex;
 }
 .paragraph{
     color: dimgray;
@@ -61,14 +92,45 @@ section{
     padding: 7px;
     padding-inline: 9px;
     font-size: 18px;
+    font-weight: bold;
     border-radius: 20px;
-    border:1px solid var(--gold);
-    background-color: #fff;
-    color: var(--gold);
     cursor: pointer;
     transition: all .3s ease;
+    border:1px solid var(--gold);
 }
 .action:hover{
     background-color: var(--gold);
     color: #fff;
+}
+.btn1{
+    background-color: var(--gold);
+    color: white;
+}
+.btn1:hover{
+    background-color: white;
+    color: var(--gold);
+}
+.btn2{
+    border:1px solid var(--gold);
+    background-color: white;
+    color: var(--gold);
+}
+.rating{
+    column-gap: 15px;
+}
+.p-rates{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.star{
+    color: var(--gold);
+    background-color: var(--dark);
+    width: 50px;
+    height:50px;
+    border-radius: 7px;
+}
+.sparkle{
+    fill: var(--gold);
+    width: 42px;
+    height:42px
 }
