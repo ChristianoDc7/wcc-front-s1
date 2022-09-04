@@ -1,7 +1,7 @@
 :root{
     --gold: #D9985F;
     --dark: #231F1E;
-    --gray: #ededed;
+    --gray: #f4f4f4;
 }
 
 body{
@@ -25,9 +25,8 @@ main{
     row-gap:70px;
 }
 .logo{
-    font-weight: 1000;
+    font-weight: bolder;
     font-size: 1.8rem;
-
 }
 .octo{
     fill: transparent;
@@ -210,6 +209,7 @@ section{
     font-size: 12px;
     padding-inline: 1.3vw;
     padding-bottom: 20px;
+    animation: slide-in-right 2s ease-in-out;
 }
 .people-list{
     width: 14vw;
@@ -221,6 +221,7 @@ section{
     background-color: #fff;
     flex-direction: column;
     z-index: 999;
+    animation: slide-in-left 2s ease-in-out;
 }
 .people-avatar{
     display: flex;
@@ -247,4 +248,66 @@ section{
 }
 .plus:hover .fa-plus{
     color: white;
+}
+.bullet{
+    position: absolute;
+    color: red;
+    border-radius: 20px;
+}
+@keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(-300%);
+    }
+    50%{
+        transform: translateX(40%);
+    }
+    100% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right{
+    0% {
+        transform: translateX(200%);
+    }
+    50%{
+        transform: translateX(-20%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@media screen and (min-width: 1400px){
+    .darkbg{
+        width:30%;
+        right: 12%;
+    }
+    .goldBg{
+        right: 8.8%;
+    }
+    .menus{
+        column-gap: 28px;
+    }
+}
+@media screen and (min-width: 1600px){
+    .darkbg{
+        right: 10%;
+    }
+    .goldBg{
+        right: 7.3%;
+    }
+}
+@media screen and (max-width: 1300px){
+    .darkbg{
+        width: 30%;
+        right: 14%;
+    }
+    .goldBg {
+        right: 7.5%;
+    }
+    ul li a {
+        font-size: 12px;
+    }
 }
