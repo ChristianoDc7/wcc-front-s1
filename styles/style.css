@@ -188,7 +188,7 @@ section{
     justify-content: flex-end;
     background-color: var(--dark);
     width: 27vw;
-    height: 75vh;
+    height: 600px;
     position: absolute;
     top: 0;
     right: 11%;
@@ -283,6 +283,7 @@ section{
     .darkbg{
         width:30%;
         right: 12%;
+        height: 540px;
     }
     .goldBg{
         right: 8.8%;
@@ -294,6 +295,7 @@ section{
 @media screen and (min-width: 1600px){
     .darkbg{
         right: 10%;
+
     }
     .goldBg{
         right: 7.3%;
@@ -303,6 +305,7 @@ section{
     .darkbg{
         width: 30%;
         right: 14%;
+        height: 470px;
     }
     .goldBg {
         right: 7.5%;
