@@ -213,7 +213,7 @@ section{
 }
 .people-list{
     width: 14vw;
-    height: 18vh;
+    height: 100px;
     border-radius: 20px;
     position: absolute;
     left: -25%;
