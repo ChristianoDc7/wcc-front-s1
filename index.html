@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./script/app.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>WCC-Front-S1</title>
 </head>
 <body>
 <main class="column">
     <nav>
-        <div class="logo">
+        <div class="logo centerALign">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="octo-svg">
+                <path d="M164.5,32h-73a7.9,7.9,0,0,0-5.6,2.3L34.3,85.9A7.9,7.9,0,0,0,32,91.5v73a7.9,7.9,0,0,0,2.3,5.6l51.6,51.6a7.9,7.9,0,0,0,5.6,2.3h73a7.9,7.9,0,0,0,5.6-2.3l51.6-51.6a7.9,7.9,0,0,0,2.3-5.6v-73a7.9,7.9,0,0,0-2.3-5.6L170.1,34.3A7.9,7.9,0,0,0,164.5,32Z"
+                      class="octo" stroke-linecap="round" stroke-linejoin="round" stroke-width="55"/>
+            </svg>
             Sinaux
         </div>
         <div >
             <ul class="menus">
                 <li><a href="#">Home</a></li>
-                <li><a href="#" class="centerALign">Courses <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li class="crs"><a href="#" class="centerALign">Courses <i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">MarketPlace</a>
+                        <a href="#">Electronic</a>
+                        <a href="#">House</a>
+                    </div>
+                </li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Pricing</a></li>
-                <li><a href="#" class="centerALign">Sign up <i class="fa-solid fa-arrow-right"></i></a></li>
+                <li><a href="#" class="centerALign sgn">Sign up <i class="fa-solid fa-arrow-right"></i></a></li>
             </ul>
         </div>
     </nav>
@@ -57,5 +68,18 @@
             </p>
         </div>
     </section>
+    <div class="darkbg">
+        <img src="./assets/study%20girl.png"/>
+        <div class="centerALign centerJustify people-list">
+            <p>99+ Certified Mentors</p>
+            <div class="people-avatar" id="people-avatar"></div>
+        </div>
+    </div>
+    <div class="goldBg">
+        <svg x="0px" y="0px" viewBox="0 0 122.88 122.88" class="sparkle ws" style="enable-background:new 0 0 122.88 122.88" >
+            <path class="st0" d="M62.43,122.88h-1.98c0-16.15-6.04-30.27-18.11-42.34C30.27,68.47,16.16,62.43,0,62.43v-1.98 c16.16,0,30.27-6.04,42.34-18.14C54.41,30.21,60.45,16.1,60.45,0h1.98c0,16.15,6.04,30.27,18.11,42.34 c12.07,12.07,26.18,18.11,42.34,18.11v1.98c-16.15,0-30.27,6.04-42.34,18.11C68.47,92.61,62.43,106.72,62.43,122.88L62.43,122.88z"/>
+        </svg>
+        Define your future with Sinaux
+    </div>
 </main>
 </body>
